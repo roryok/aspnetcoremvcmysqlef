@@ -1,0 +1,15 @@
+﻿@model aspnetcoremvcmysqlef.Employees
+@{
+    ViewData["Title"] = "Employees";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<ul>
+    @foreach (var em in Model.List)
+    {
+        <li>
+            <em>@em.Name</em><strong>@em.LastName</strong>
+        </li>
+    }
+</ul>
